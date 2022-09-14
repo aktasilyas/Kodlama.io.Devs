@@ -15,6 +15,8 @@ namespace Persistence.Contexts
         protected IConfiguration Configuration { get; set; }
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
         public DbSet<Technology> Technologies { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<UserSocialMediaAddress> UserSocialMediaAddresses { get; set; }
         public DbSet<User> Users { get; set; }
 
@@ -101,12 +103,10 @@ namespace Persistence.Contexts
             };
             modelBuilder.Entity<OperationClaim>().HasData(operationClaimsEntitySeeds);
 
-            //Kullanıcı Sosyal Medya Adresi tablosuna varsayılan kayıtları ekler. (Seeds)
-            //Not: İlk User Kayıt Olduktan Sonra Bu İşlem Yapılmalıdır.
-             UserSocialMediaAddress[] userSocialMediaAddressEntitySeeds =
-             {
-                 new(1,"https://github.com/aktasilyas",1)
-             };
+            UserSocialMediaAddress[] userSocialMediaAddressEntitySeeds =
+            {
+                  new(1,"https://github.com/aktasilyas",1)
+              };
             modelBuilder.Entity<UserSocialMediaAddress>().HasData(userSocialMediaAddressEntitySeeds);
 
         }

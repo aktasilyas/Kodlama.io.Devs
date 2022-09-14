@@ -18,10 +18,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Features\UserSocialMediaAddress\Models\" />
-	  <Folder Include="Features\UserSocialMediaAddress\Queries\" />
-	  <Folder Include="Features\UserSocialMediaAddress\Rules\" />
-	  <Folder Include="Features\UserSocialMediaAddress\Profiles\" />
+	  <Folder Include="Features\UserSocialMediaAddresses\Models\" />
+	  <Folder Include="Features\UserSocialMediaAddresses\Queries\" />
+	  <Folder Include="Features\UserSocialMediaAddresses\Profiles\" />
 	</ItemGroup>
 
 </Project>

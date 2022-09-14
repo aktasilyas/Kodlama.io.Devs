@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.UserSocialMediaAddress.Dtos
+namespace Application.Features.UserSocialMediaAddresses.Dtos
 {
     public class CreateSocialMediaAddressDto
     {
