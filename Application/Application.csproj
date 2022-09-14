@@ -17,4 +17,10 @@
 		<ProjectReference Include="..\src\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcerns.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Features\UserSocialMediaAddresses\Models\" />
+	  <Folder Include="Features\UserSocialMediaAddresses\Queries\" />
+	  <Folder Include="Features\UserSocialMediaAddresses\Profiles\" />
+	</ItemGroup>
+
 </Project>

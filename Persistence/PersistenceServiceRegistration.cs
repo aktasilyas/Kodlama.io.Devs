@@ -1,4 +1,5 @@
 ﻿using Application.Services.Repositories;
+using Core.Security.Entities;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,11 @@ namespace Persistence
                                                      options.UseSqlServer(
                                                          configuration.GetConnectionString("KodlamaIoDevsConnectionString")));
              services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
+             services.AddScoped<ITechnologyRepository, TechnologyRepository>();
+            services.AddScoped<IUserOperationClaimRepository, UserOperationClaimRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserSocialMediaAddressRepository, UserSocialMediaAddressRepository>();
+
 
             return services;
         }
